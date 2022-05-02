@@ -18,10 +18,11 @@ const buy = document.getElementById("Buy");
 const img = document.getElementsByClassName("image");
 const section = document.getElementById("section");
 var i = 0;
+	var user = prompt("🔷 What's your name?");
 function openA(){
 	name.innerHTML = "Type : " + productA.name + " |";
 	price.innerHTML = "|  Price :" + productA.price;
-	buy.setAttribute("href", "https://wa.me/919306794492?text=I'm%20interested%20in%20buying%20your%20product%20" + name.innerHTML + "this%20");
+	buy.setAttribute("href", "https://wa.me/918950661477?text=Hi%20Ankit,%20I'm%20" + user + "%20and%20am%20interested%20in%20your%20this%20product-%20*Name*:%20" + name.innerHTML + "%20,%20*Color*:%20Any%20.%20Can%20you%20please%20provide%20me%more%details%20about%20it?%20");
 	for (var i = 0, len = img.length; i < len; i++) {
 		img[i].setAttribute("src" , productA.image[i]);
 	}
@@ -30,7 +31,7 @@ function openA(){
 function openB(){
 	name.innerHTML = "Type : " + productB.name + " |";
 	price.innerHTML = "|  Price :" + productB.price;
-	buy.setAttribute("href", "https://wa.me/919306794492?text=I'm%20interested%20in%20buying%20your%20product%20" + name.innerHTML + "this%20");	
+	buy.setAttribute("href", "https://wa.me/918950661477?text=Hi%20Ankit,%20I'm%20" + user + "%20and%20am%20interested%20in%20your%20product-%20*Name*:%20" + name.innerHTML + "%20,%20*Color*:%20Any%20.%20Can%20you%20please%20provide%20me%more%details%20about%20it?%20");
 	for (var i = 0, len = img.length; i < len; i++) {
 		img[i].setAttribute("src" , productB.image[i]);
 	}

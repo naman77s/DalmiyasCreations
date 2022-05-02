@@ -14,18 +14,18 @@ body{
     position:fixed;
     top:0;
     left:0;
-    height:9vh;
+    height:7vh;
     width:100vw;
     box-sizing:border-box;
     background: orange;
-    padding:1%;
+    padding:0.1rem;
     z-index:2;
 }
 	.MenuBar .Logo{
 		    display:block;
 		    float:left;
-		    height:140px;
-		    width:140px;
+		    height:3rem;
+		    width:10rem;
 		    /*margin-top:-12%;
 		    margin-left:-1%;*/
 	}
@@ -34,10 +34,10 @@ body{
 		    position:absolute;
 		    height:40px;
 		    color:white;
-		    font-size:23pt;
+		    font-size:2rem;
 		    font-stretch:ultra-expanded;
 		    transition:0.2s;
-		    right:5%;
+		    right:1rem;
 	}
 .menu {
     position: absolute; 
@@ -56,8 +56,8 @@ body{
     background:white;
     height:100vh;
     width:100vw;
-    top:9%;
-    left:-120%;
+    top:7vh;
+    left:-120vw;
     padding:20vh 0 2vh 0;
     text-align:center;
     transition:0.3s;
@@ -66,10 +66,10 @@ body{
 }
 	.Snav .nav{
 		    display:block;
-		    font-size:17pt;
+		    font-size:1.5rem;
 		    text-decoration:none;
 		    font-family:righteous;
-		    padding:5%;
+		    padding:1.5rem;
 	}
 a{
 	transition:0.2s ease;
@@ -87,12 +87,12 @@ a{
 	flex-wrap:wrap;
 }
 	.navNew{
-		padding:5%;
-		border-radius:10px;
+		padding:1.5rem;
+		border-radius:1.5rem;
 		color:grey;
-		font-size:20pt;
+		font-size:1.8rem;
 		font-weight:900;
-		margin:1% 1%;
+		margin:0.5rem 0.5rem;
 		transition:0.2s ease;
 	}
 		.navNew:nth-child(3) {
@@ -104,7 +104,7 @@ a{
 	height:2.5vh;
 	width:5vw;
 	background:skyblue;
-	border-radius:5px;
+	border-radius:0.5rem;
 }
 	.top-left{
 		top:10%;
@@ -113,7 +113,7 @@ a{
 	}
 	.top-right{
 		top:20%;
-		right:10%;
+		right:5%;
 		animation:float2 1.2s linear infinite alternate-reverse;
 	}
 		@keyframes float1{
@@ -122,7 +122,7 @@ a{
 		}
 		@keyframes float2{
 			from{top:20%;}
-			to{top:; right:11%;}
+			to{right:7%;}
 		}
 .footer {
 	display:block;
@@ -131,42 +131,42 @@ a{
 	bottom:0;
 	background:black;
 	color:silver;
-	padding:10%;
+	padding:1rem;
 	text-align:center;
-	font-size:15pt;
+	font-size:1.5rem;
 }
 	.footer > p:first-of-type  {
-		font-size:6pt;
-		margin:5%;
+		font-size:0.5rem;
+		margin:0.7rem;
 	}
 	.footer > p:last-of-type {
-		font-size:5pt;
+		font-size:0.6rem;
 		color:grey;
 	}
 .container{
 	display:block;
-	padding:5%;
+	padding:1.5rem;
 	text-align:center;
 }
 .products .product{
 	display:block;
-	margin:10%;
+	margin:2rem;
 	text-align:center;
 	justify-content:center;
-	padding:2%;
+	padding:0.2rem;
 	background:white;
-	border:1px solid skyblue;
-	border-radius:5px;
+	border:0.1rem solid skyblue;
+	border-radius:0.5rem;
 }
 	.products > h3{
-		border-bottom:1px solid black;
+		border-bottom:0.1rem solid black;
 		margin:0 35vw;
-		letter-spacing:3px;
+		letter-spacing:0.3rem;
 	}
 	.products .product > p{
-		font-size:12pt;
-		font-weight:500;
-		margin:1%;
+		font-size:1rem;
+		font-weight:300;
+		margin:0.1rem;
 		color: #19211e;
 	}
 	.products .product .slider{
@@ -175,11 +175,11 @@ a{
 		overflow:scroll;
 		width:40vw;
 		margin:0 auto;
-		padding:1%;
+		padding:0.1rem;
 	}
 		.slider::-webkit-scrollbar{
-			width: 0px;
-			height: 2px;
+			width: 0;
+			height: 0.2rem;
 			background-color: black; 
 		}
 		.slider::-webkit-scrollbar-thumb{
@@ -188,20 +188,20 @@ a{
 		.slider img {
 			height:25vh;
 			width:35vw;
-			margin:0 15%;
+			margin:0 1.5rem;
 		}
 .container{
 
 }
 .container a:last-of-type{
-	font-size:15pt;
+	font-size:1.5rem;
 	
 }
 .section-main {
 	position:fixed;
 	background:orange;
-	bottom:-120%;
-	border-radius:30px 30px 0 0;
+	bottom:-120rem;
+	border-radius:2rem 2rem 0 0;
 	overflow:scroll;
 	transition:0.5s ease-in;
 	width:90vw;
@@ -210,25 +210,32 @@ a{
 .btn-cross{
 	display:block;
 	position:absolute;
-	top:1%;
-	right:3%;
-	font-size:15pt;
+	top:0.5rem;
+	right:1rem;
 	background:white;
 	color:black;
-	border-left:1px solid black;
-	border-bottom:1px solid black;
-	border-radius:10px;
-	padding:2% 4%;
-	animation:float3 1.5s linear infinite alternate-reverse;
+	border-left:0.1rem solid black;
+	border-bottom:0.1rem solid black;
+	border-radius:0.8rem;
+	padding:1rem;
+	text-align:center;
+
+}
+.btn-cross i{
+	display:inline-block;
+	position:absolute;
+	animation:float3 1s linear infinite alternate-reverse;
+	font-size:1.1rem;
+	right:0.7rem;
 }
 @keyframes float3{
-	from{top:-1%;}
-	to{top:1%;}
+	from{top:0;}
+	to{top:0.8rem;}
 }
 .container-pro{
 	display:block;
 	background:white;
-	border-radius:15px;
+	border-radius:1.5rem;
 }
 	.container-pro .slider{
 		display:flex;
@@ -236,24 +243,24 @@ a{
 		overflow:scroll;
 		width:75vw;
 		margin:0 auto;
-		padding:1%;
+		padding:0.1rem;
 	}
 	.container-pro .slider img{
 		height:50vh;
 		width:70vw;
-		margin:0 5%;
+		margin:0 1.5rem;
 	}
 	.container-pro .container-details{
 		display:flex;
 		justify-content:center;
-		padding:5%;
+		padding:0.5rem;
 		flex-wrap:wrap;
-		font-size:12pt;
+		font-size:1rem;
 		font-weight:500;
 	}
 .btn{
 	display:block;
-	width:50vw;
+	width:;
 	background:black;
 	color:white;
 	border-radius:15px;
