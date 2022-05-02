@@ -22,7 +22,7 @@ var i = 0;
 function openA(){
 	name.innerHTML = "Type : " + productA.name + " |";
 	price.innerHTML = "|  Price :" + productA.price;
-	buy.setAttribute("href", "https://wa.me/918950661477?text=Hi%20Ankit,%20I'm%20" + user + "%20and%20am%20interested%20in%20your%20this%20product-%20*Name*:%20" + name.innerHTML + "%20,%20*Color*:%20Any%20.%20Can%20you%20please%20provide%20me%more%details%20about%20it?%20");
+	buy.setAttribute("href", "https://wa.me/918950661477?text=Hi%20Ankit,%20I'm%20" + user + "%20and%20am%20interested%20in%20your%20this%20product-%20*Name*:%20" + productA.name + "%20,%20*Color*:%20Any%20.%20Can%20you%20please%20provide%20me%20more%20details%20about%20it?%20");
 	for (var i = 0, len = img.length; i < len; i++) {
 		img[i].setAttribute("src" , productA.image[i]);
 	}
@@ -31,7 +31,7 @@ function openA(){
 function openB(){
 	name.innerHTML = "Type : " + productB.name + " |";
 	price.innerHTML = "|  Price :" + productB.price;
-	buy.setAttribute("href", "https://wa.me/918950661477?text=Hi%20Ankit,%20I'm%20" + user + "%20and%20am%20interested%20in%20your%20product-%20*Name*:%20" + name.innerHTML + "%20,%20*Color*:%20Any%20.%20Can%20you%20please%20provide%20me%more%details%20about%20it?%20");
+	buy.setAttribute("href", "https://wa.me/918950661477?text=Hi%20Ankit,%20I'm%20" + user + "%20and%20am%20interested%20in%20your%20product-%20*Name*:%20" + productB.name + "%20,%20*Color*:%20Any%20.%20Can%20you%20please%20provide%20me%20more%20details%20about%20it?%20");
 	for (var i = 0, len = img.length; i < len; i++) {
 		img[i].setAttribute("src" , productB.image[i]);
 	}
