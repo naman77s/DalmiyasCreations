@@ -65,6 +65,7 @@ body{
 		    font-size:1.5rem;
 		    text-decoration:none;
 		    font-family:righteous;
+			font-family: 'Dongle', sans-serif;
 		    padding:1.5rem;
 			color: black;
 	}
@@ -94,9 +95,6 @@ a{
 		margin:0.5rem 0.5rem;
 		transition:0.2s ease;
 	}
-		.navC:nth-child(3) {
-			text-decoration:none;
-		}
 .particle{
 	display:block;
 	position:absolute;
@@ -187,7 +185,7 @@ a{
 		margin-top: -1.5rem;
 	}
 	.products .setA span > p{
-		font-size:1.3rem;
+		font-size:1rem;
 		font-weight:300;
 		margin:0.1rem 0;
 		color: #19211e;
@@ -283,7 +281,7 @@ a{
 .btn{
 	display:block;
 	height: 2.5vh;
-	width:60vw;
+	width:80vw;
 	background:black;
 	color:white;
 	border-radius:15px;
