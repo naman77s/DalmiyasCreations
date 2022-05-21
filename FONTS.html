@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font styles</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cinzel:wght@400;500;700;900&family=Comfortaa:wght@300;400;500;600;700&family=Dangrek&family=Dongle:wght@300;400;700&family=Indie+Flower&family=Josefin+Sans&family=Koulen&family=Macondo&family=Odibee+Sans&family=Raleway:ital,wght@0,200;0,400;0,600;0,800;1,400;1,800&family=Secular+One&family=Shadows+Into+Light&family=Skranji&family=Staatliches&family=Zen+Loop&display=swap');
+
+.fonts {
+	display:block;
+	font-size:1.5rem;
+	text-align:center;
+	padding:5rem;
+	margin:1rem;
+	box-shadow:0 0px 25px silver;
+	
+}
+.fonts .a{
+	font-family: 'Amatic SC', cursive;
+}
+.fonts .b{
+	font-family: 'Cinzel', serif;	
+}
+.fonts .c{
+	font-family: 'Dangrek', cursive;
+}
+.fonts .d{
+	font-family: 'Comfortaa', cursive;
+}
+.fonts .e{
+	font-family: 'Dongle', sans-serif;
+}
+.fonts .f{
+	font-family: 'Indie Flower', cursive;
+}
+.fonts .g{
+	font-family: 'Josefin Sans', sans-serif;
+}
+.fonts .h{
+	font-family: 'Koulen', cursive;
+}
+.fonts .i{
+	font-family: 'Macondo', cursive;
+}
+.fonts .j{
+	font-family: 'Odibee Sans', cursive;
+}
+.fonts .k{
+	font-family: 'Raleway', sans-serif;
+}
+.fonts .l{
+	font-family: 'Secular One', sans-serif;
+}
+.fonts .m{
+	font-family: 'Shadows Into Light', cursive;
+}
+.fonts .n{
+	font-family: 'Skranji', cursive;
+}
+.fonts .o{
+	font-family: 'Staatliches', cursive;
+}
+.fonts .p{
+	font-family: 'Zen Loop', cursive;
+}
+.fonts .q{
+	
+}
+</style>
+</head>
+<body>
+<div class="fonts">
+	<p class="a">abc123xyz</p>
+	<p class="b">abc123xyz</p>
+	<p class="c">abc123xyz</p>
+	<p class="d">abc123xyz</p>
+	<p class="e">abc123xyz</p>
+	<p class="f">abc123xyz</p>
+	<p class="g">abc123xyz</p>
+	<p class="h">abc123xyz</p>
+	<p class="i">abc123xyz</p>
+	<p class="j">abc123xyz</p>
+	<p class="k">abc123xyz</p>
+	<p class="l">abc123xyz</p>
+	<p class="m">abc123xyz</p>
+	<p class="n">abc123xyz</p>
+	<p class="o">abc123xyz</p>
+	<p class="p">abc123xyz</p>
+	<p class="q">abc123xyz</p>
+</div>
+<script>
+var p = document.getElementsByTagName("p");
+		for (var i = 0, len = p.length; i < len;) {
+	$(p[i]).on("click" , function CTC(element) {
+		var $temp = $("<input>");
+		$("body").append($temp);
+
+
+		$temp.val($(p[i]).text()).select();
+
+		document.execCommand("copy");
+		$temp.remove();
+		console.log("////done////");
+	})
+		}
+
+</script>
+</body>
+</html>
