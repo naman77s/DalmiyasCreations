@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cinzel:wght@400;500;700;900&family=Comfortaa:wght@300;400;500;600;700&family=Dangrek&family=Dongle:wght@300;400;700&family=Indie+Flower&family=Josefin+Sans&family=Koulen&family=Macondo&family=Odibee+Sans&family=Raleway:ital,wght@0,200;0,400;0,600;0,800;1,400;1,800&family=Secular+One&family=Shadows+Into+Light&family=Skranji&family=Staatliches&family=Zen+Loop&display=swap');
 *{
     scroll-behavior: smooth;
     --webkit-user-select:none;
@@ -19,36 +20,31 @@ body{
     box-sizing:border-box;
     background: orange;
     padding:0.1rem;
-    z-index:2;
+    z-index:4;
 }
 	.MenuBar .Logo{
 		    display:block;
 		    float:left;
-		    height:3rem;
-		    width:5rem;
+		    height:2.5rem;
+		    width:4.5rem;
+			margin: 0.2rem;
 		    /*margin-top:-12%;
 		    margin-left:-1%;*/
 	}
-	.MenuBar label span{
-			display:inline-block;
-		    position:absolute;
+	.MenuBar .menuIcon{
+		display:inline-block;
+			position:absolute;
 		    height:40px;
 		    color:white;
 		    font-size:2rem;
 		    font-stretch:ultra-expanded;
 		    transition:0.2s;
 		    right:1rem;
-	}
-.menu {
-    position: absolute; 
-    overflow: hidden; 
-    clip: rect(0 0 0 0); 
-    height: 1px; width: 1px; 
-    margin: -1px; padding: 0; border: 0; 
-}
-	.menu:checked + label > .Snav{
-		left:0;
-		transition:0.5s ease;
+		    background:none;
+		    outline:none;
+		    border:none;
+			width:10vw;
+			text-align:center;
 	}
 .Snav{
     display:block;
@@ -61,7 +57,7 @@ body{
     padding:20vh 0 2vh 0;
     text-align:center;
     transition:0.3s;
-    z-index:1;
+    z-index:3;
     overflow:hidden;
 }
 	.Snav .nav{
@@ -70,23 +66,26 @@ body{
 		    text-decoration:none;
 		    font-family:righteous;
 		    padding:1.5rem;
+			color: black;
 	}
+	.Snav .nav:hover{
+        color: white;
+    }
 a{
 	transition:0.2s ease;
-	color:black;
 }
 	a:hover{
 	    text-decoration:none;
 	    color:white;
 		background:black;
 	}
-.cContainer{
+.container-contact{
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	flex-wrap:wrap;
 }
-	.navNew{
+	.navC{
 		padding:1.5rem;
 		border-radius:1.5rem;
 		color:grey;
@@ -95,7 +94,7 @@ a{
 		margin:0.5rem 0.5rem;
 		transition:0.2s ease;
 	}
-		.navNew:nth-child(3) {
+		.navC:nth-child(3) {
 			text-decoration:none;
 		}
 .particle{
@@ -105,6 +104,7 @@ a{
 	width:5vw;
 	background:skyblue;
 	border-radius:0.5rem;
+	z-index:1;
 }
 	.top-left{
 		top:10%;
@@ -147,8 +147,23 @@ a{
 	display:block;
 	padding:1.5rem;
 	text-align:center;
+	z-index: 3;
 }
-.products .product{
+.a-a h1{
+	font-family: 'Dongle', sans-serif;
+	font-size:3.5rem;
+}
+.a-a h3{
+	position:relative;
+	text-align:right;
+	font-family: 'Odibee Sans', cursive;
+	z-index:2;
+}
+.a-a h5{
+	font-family: 'Dongle', sans-serif;
+	font-size:1.2rem;
+}
+.products .pct{
 	display:block;
 	margin:2rem;
 	text-align:center;
@@ -160,16 +175,24 @@ a{
 }
 	.products > h3{
 		border-bottom:0.1rem solid black;
-		margin:0 35vw;
+		margin:0 auto;
 		letter-spacing:0.3rem;
+		width: 10vw;
+
 	}
-	.products .product > p{
-		font-size:1rem;
+	.products span{
+		display: flex;
+		justify-content: space-around;
+		width: auto;
+		margin-top: -1.5rem;
+	}
+	.products .setA span > p{
+		font-size:1.3rem;
 		font-weight:300;
-		margin:0.1rem;
+		margin:0.1rem 0;
 		color: #19211e;
 	}
-	.products .product .slider{
+	.products .pct .slider{
 		display:flex;
 		justify-content:flex-start;
 		overflow:scroll;
@@ -190,9 +213,6 @@ a{
 			width:35vw;
 			margin:0 1.5rem;
 		}
-.container{
-
-}
 .container a:last-of-type{
 	font-size:1.5rem;
 	
@@ -202,20 +222,25 @@ a{
 	background:orange;
 	bottom:-120rem;
 	border-radius:2rem 2rem 0 0;
-	overflow:scroll;
+	overflow: hidden;
+	overflow-x:scroll;
 	transition:0.5s ease-in;
-	width:90vw;
+	width:88vw;
 	text-align:center;
+}
+.section-main::-webkit-scrollbar{
+	display: none;
 }
 .btn-cross{
 	display:block;
 	position:absolute;
-	top:0.5rem;
-	right:1rem;
-	background:white;
+	top:0rem;
+	right:0rem;
+	background:orange;
 	color:black;
-	border-left:0.1rem solid black;
-	border-bottom:0.1rem solid black;
+	/* border-left:0.1rem solid black;
+	border-bottom:0.1rem solid black; */
+	box-shadow: 0 0 15px black;
 	border-radius:0.8rem;
 	padding:1rem;
 	text-align:center;
@@ -223,19 +248,15 @@ a{
 }
 .btn-cross i{
 	display:inline-block;
-	position:absolute;
-	animation:float3 1s linear infinite alternate-reverse;
 	font-size:1.1rem;
+	font-weight: 800;
 	right:0.7rem;
-}
-@keyframes float3{
-	from{top:0;}
-	to{top:0.8rem;}
 }
 .container-pro{
 	display:block;
 	background:white;
 	border-radius:1.5rem;
+	margin: 0 auto;
 }
 	.container-pro .slider{
 		display:flex;
@@ -243,33 +264,138 @@ a{
 		overflow:scroll;
 		width:75vw;
 		margin:0 auto;
-		padding:0.1rem;
+		padding:0.3rem;
 	}
 	.container-pro .slider img{
 		height:50vh;
 		width:70vw;
 		margin:0 1.5rem;
 	}
-	.container-pro .container-details{
+.container-details{
 		display:flex;
 		justify-content:center;
 		padding:0.5rem;
 		flex-wrap:wrap;
-		font-size:1rem;
+		font-size:1.5rem;
+		font-weight: 500;
 		font-weight:500;
 	}
 .btn{
 	display:block;
-	width:;
+	height: 2.5vh;
+	width:60vw;
 	background:black;
 	color:white;
 	border-radius:15px;
 	overflow:hidden;
-	padding:2%;
-	margin:5% auto 0 auto;
+	padding:2.5%;
+	margin:2% auto 0 auto;
 	animation:spread 0.5s infinite linear alternate-reverse;
 }
 @keyframes spread{
-	from{ box-shadow:0 0 1px 5px red; }
+	from{ box-shadow:0 0 1px 5px red;}
 	to{ box-shadow:inset 0 0 5px 20px red; }
 }
+.prompt{
+	display:block;
+	position:fixed;
+	box-sizing:border-box;
+	top:0; left:0;
+	height:100vh;
+	width:100vw;
+	text-align:left;
+	padding:7rem 1rem;
+	backdrop-filter:blur(5px);
+	background: rgba(0,0,0,0.7);
+	background:white;
+	overflow:hidden;
+	z-index:999;
+	transition:0.5s ease;
+}
+.prompt h1, .prompt .fa-users{
+	font-size:30pt;
+	width:87vw;
+	margin-bottom:2rem;
+	text-align:center;
+}
+.prompt .fa-users{
+	font-size:70pt;
+}
+.prompt .ilock{
+	color: white;
+	position: absolute;
+	padding: 10px;
+    min-width: 40px;
+	font-size: 1.4rem;
+}
+.container-set{
+	padding:2rem;
+	border-radius:10px;
+	background:rgba(0,0,0,-5);
+}
+.container-set legend{
+	background:rgba(0,0,0,1);
+	color:white;
+	padding:0.3rem 0.8rem;
+	border-radius:0.2rem;
+	border:1px solid black;
+}
+.container-set #input-name {
+	padding:0.3rem;
+	background:none;
+	outline:none;
+	border:none;
+	border-bottom:2px solid black;
+	width:35vw;
+	transition:0.2s;
+	text-align:center;
+}
+.container-set #input-name:hover{
+	width:45vw;
+	background:none;
+	border-bottom-right-radius:20px;
+}
+.container-set #input-submit {
+	padding:0.8rem 0.1rem;
+	width: 40vw;
+	background: skyblue;
+	color:white;
+	outline:none;
+	border:none;
+	border-radius:0.5rem;
+}
+.footer {
+	display:block;
+	box-sizing:border-box;
+	background:#191b1f;
+	color:white;
+	padding:4rem 1rem 1rem 1rem;
+	text-align:center;
+	font-size:1.5rem;
+}
+	.footer hr{
+		width:20vw;
+		border:2px solid orange;
+		border-bottom:none;
+		margin-top:0.2rem;
+	}
+	.footer .fnav{
+		border-radius:50px;
+		background: #302a2a;
+		color:white;
+		padding:0.5rem 0.65rem;
+		margin: 0.2rem 2rem;
+		font-size:1.3rem;
+		text-align:center;
+	}
+		.footer .fnav:hover{
+			background:orange;
+		}
+	.footer a{
+		color:#9e0f05;
+		text-decoration:none;
+	}
+	.footer p{
+		font-size: 2rem;
+		line-height:1.4;
+	}

@@ -8,6 +8,7 @@
 <title>Dalmia Creations</title>
 <!-- Css -->
 <link href="style.css" rel="stylesheet">
+<link href="responsive.css" rel="stylesheet">
 <!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <!-- Data Aos -->
@@ -46,48 +47,50 @@
 <header>
 		<div class="MenuBar">
 			<img src="./assets/img/Logo.jpg" class="Logo" alt="Dalmia Creations Logo" >
-			<input type="checkbox" class="menu" id="menu">
-			<label for="menu"> 
-				<span>&#9776;</span>
+			<input value="&#9776;" type="text" class="menuIcon" id="menuIcon" onclick="pull()" onblur="dump()" readonly />
 				<div class="Snav" id="Snav">
-					<a href="#Home" class="nav"> HOME </a>
-					<a href="#Products" class="nav"> Our Products </a><hr>
-					<font class="nav" id="contact"> Contact Us</font>
-					<div class="cContainer" id="cContainer">
-						<a class="navNew" target="_blank" rel="noopener noreferrer" href="https://wa.me/918950661477"><i class="fa fa-whatsapp"> </i></a>
-						<a class="navNew" target="_blank" rel="noopener noreferrer" href="https://wa.me/918569948881"><i class="fa fa-whatsapp"> </i></a>
-						<a class="navNew" target="_blank" rel="noopener noreferrer" href="mailto:dalmiaankit81@gmail.com"><i class="fa fa-google"> </i></a>
+					<a href="#Home" class="nav"> <i class="fa fa-home"> Home</i> </a>
+					<a href="#Products" class="nav"> <i class="fa fa-list"> Products</i> </a><hr>
+					<a href="#footer" class="nav" id="contact"> Contact Us</a>
+					<div class="container-contact" id="container-contact">
+						<a class="navC" target="_blank" rel="noopener noreferrer" href="https://wa.me/918950661477"><i class="fa fa-whatsapp"> </i></a>
+						<a class="navC" target="_blank" rel="noopener noreferrer" href="https://wa.me/918569948881"><i class="fa fa-whatsapp"> </i></a>
+						<a class="navC" target="_blank" rel="noopener noreferrer" href="mailto:dalmiaankit81@gmail.com"><i class="fa fa-google"> </i></a>
 					</div>
 				</div>
-			</label>
 		</div><br>
 </header>
 <body>
 <br><br><br><br>
 <div class="home" id="Home">
-	<div class="container">
-		<h1>Dalmia Creations</h1><br>
+	<div class="container a-a">
+		<h1>Dalmia's Creations</h1>
+		<h3 align="right" >- Since 2020</h3>
 		<h5>Files | Folders | Rubber Stamps and more..</h5><br><br><hr><br>
 		<div class="particle top-left"></div>
 		<div class="particle top-right"></div>
 	</div>
 
 	</div>
-	<div class="container products" id="Products">
-		<h3> Folders </h3>
-		<div class="product" onclick="openA()" data-aos="fade-up" data-aos-duration="500">
-			<div class="slider">
-				<img src="./assets/img/matte/B1.png" alt="Folders">
-				<img src="./assets/img/matte/B2.png" alt="Folders">
-			</div><br>
-			<p> Type : Matte Fabric <br> Price : 180₹ </p>
-		</div>
-		<div class="product" onclick="openB()" data-aos="fade-up" data-aos-duration="500">
-			<div class="slider">
-				<img src="./assets/img/nw/B1.png" alt="Folders">
-				<img src="./assets/img/nw/B2.png" alt="Folders">
-			</div><br>
-			<p>Type : Non - Wooven fabric <br> Price : 80₹ </p>
+	<div class="container products" id="products">
+		<div class="setA">
+			<h3> Folders </h3>
+			<div class="pct" id="p-a" onclick="openA()" data-aos="fade-up" data-aos-duration="500">
+				<div class="slider">
+					<img class="p-i" alt="Folders">
+					<img class="p-i" alt="Folders">
+				</div>
+			</div>
+			<span><p id="name"> </p><p id="price"> </p></span>
+
+			<div class="pct" id="p-b" onclick="openB()" data-aos="fade-up" data-aos-duration="500">
+				<div class="slider">
+					<img class="p-i" alt="Folders">
+					<img class="p-i" alt="Folders">
+				</div>
+			</div>
+			<span><p id="name"></p><p id="price"></p></span>
+
 		</div>
 	</div>
 </div>
@@ -100,11 +103,11 @@
 			<img class="image" id="image" src="" alt="Folders">
 			<img class="image" id="image" src="" alt="Folders">
 		</div><br>
-		<div class="container-details">
-			<p class="name" id="name"> </p>
-			<p class="price" id="price"> </p>
-			<p class="color" id="color"> </p>
-		</div>
+	</div>
+	<div class="container-details">
+		<p class="name" id="name"> </p>
+		<p class="price" id="price"> </p>
+		<p class="color" id="color"> </p>
 	</div>
 	<a class="btn" id="Buy" target="_blank" rel="noopener noreferrer">
 		<i class="fa fa-whatsapp"> 
@@ -112,14 +115,25 @@
 		</i>
 	</a>
 </div>
-
-<footer class="cContainer footer">
+<div class="prompt" id="prompt">
+		<i class="fa fa-users"></i>
+		<h1>Welcome to Dalmia's Creations</h1>
+		<fieldset class="container-set">
+			<legend> What's your name? </legend>
+			<form action="#"  onsubmit="hidee(); return false" novalidate="novalidate"  autocomplete="on" >
+				<input id="input-name" type="text" placeholder="Type your name..." required/><br><br>
+				<i class="fa fa-lock ilock"></i>
+				<input id="input-submit" type="submit" value="Login" placeholder="">
+			</form>
+		</fieldset>
+</div>
+<footer class="footer" id="footer">
 	Contact Us <br><br>
-	<a class="navNew" target="_blank" rel="noopener noreferrer" href="https://wa.me/918950661477"><i class="fa fa-whatsapp"> </i></a>
-	<a class="navNew" target="_blank" rel="noopener noreferrer" href="https://wa.me/918569948881"><i class="fa fa-whatsapp"> </i></a>
-	<a class="navNew" target="_blank" rel="noopener noreferrer" href="mailto:dalmiaankit81@gmail.com"><i class="fa fa-google"> </i></a>
+	<a class="fnav" target="_blank" rel="noopener noreferrer" href="https://wa.me/918950661477"><i class="fa fa-whatsapp"> </i></a>
+	<a class="fnav" target="_blank" rel="noopener noreferrer" href="https://wa.me/918569948881"><i class="fa fa-whatsapp"> </i></a>
+	<a class="fnav" target="_blank" rel="noopener noreferrer" href="mailto:dalmiaankit81@gmail.com"><i class="fa fa-google"> </i></a>
 	<p>Address : #2398 , Behind sewa bharti school, New rishi nagar, Hisar, Haryana</p>
-	<p>&copy;Copyright DalmiaCreations 2022</p>
+	<p>&copy;Copyright DalmiasCreations 2022</p>
 </footer>
 <script src="script.js"></script>
 <noscript>
