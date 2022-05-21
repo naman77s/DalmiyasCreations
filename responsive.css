@@ -59,6 +59,14 @@
     .a-a h3{
         margin-right: 35vw;
     }
+    .a-a h4{
+        font-size:1.3rem;
+        margin: 0.3rem auto;
+    }
+    .a-a .Logo{
+		height:9.5rem;
+		width:11.5rem;
+}
     .slider::-webkit-scrollbar{
         background: none;
     }

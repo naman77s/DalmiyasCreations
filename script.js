@@ -19,7 +19,7 @@ var productB = {
 	name : "Non-wooven Fabric" ,
 	color : "Blue / Green" ,
 	price : "80₹" ,
-	image : ["./assets/img/nw/B1.png" , "./assets/img/nw/B2.png" , "./assets/img/nw/G2.png"]
+	image : ["./assets/img/nw/G1.png" , "./assets/img/nw/G2.png" , "./assets/img/nw/G3.png"]
 };
 const cd = document.querySelector('.container-details');
 const name = cd.querySelector("#name");
