@@ -10,6 +10,9 @@
 body{
     background:#e6fcf5;
 }
+p , h1 , h2 , h3 , h4 , h5{
+	cursor: default;
+}
 /* MENU BAR RELATED */
 .MenuBar{
     display:block;
@@ -31,6 +34,7 @@ body{
 		margin: 0.4rem;
 		width: 25vw;
 		z-index:2;
+		cursor: crosshair;
 	}
 	.MenuBar .menuIcon{
 		display:inline-block;
@@ -63,9 +67,8 @@ body{
 }
 	.Snav .nav{
 		    display:block;
-		    font-size:1.5rem;
+		    font-size:2rem;
 		    text-decoration:none;
-		    font-family:righteous;
 			font-family: 'Dongle', sans-serif;
 		    padding:1.5rem;
 			color: black;
@@ -123,25 +126,6 @@ a{
 			from{top:20%;}
 			to{right:7%;}
 		}
-.footer {
-	display:block;
-	box-sizing:border-box;
-	left:0;
-	bottom:0;
-	background:black;
-	color:silver;
-	padding:1rem;
-	text-align:center;
-	font-size:1.5rem;
-}
-	.footer > p:first-of-type  {
-		font-size:0.5rem;
-		margin:0.7rem;
-	}
-	.footer > p:last-of-type {
-		font-size:0.6rem;
-		color:grey;
-	}
 .container{
 	display:block;
 	padding:1.5rem;
@@ -151,38 +135,42 @@ a{
 .a-a h1{
 	font-family: 'Dancing Script', cursive;
 	font-weight: 700;
-	font-size:5rem;
+	font-size:2rem;
 	letter-spacing: 0.5rem;
+	margin-bottom: 1vh;
 }
 .a-a .Logo{
 		height:8.5rem;
 		width:9.5rem;
 		border-radius: 1.5rem;
+		cursor: crosshair;
 }
 .a-a h4{
 	font-family: 'Comfortaa', cursive;
 	font-size:0.8rem;
 }
 .a-a h5{
-	font-family: 'Dongle', sans-serif;
-	font-size:1.2rem;
+	font-family: 'Comfortaa', cursive;
+	font-size:0.7rem;
 }
 .products .pct{
 	display:block;
-	margin:2rem;
+	margin:2rem auto;
 	text-align:center;
 	justify-content:center;
 	padding:0.2rem;
 	background:white;
 	border:0.1rem solid skyblue;
 	border-radius:0.5rem;
+	cursor: pointer;
 }
-	.products > h3{
+	.products .h1{
 		border-bottom:0.1rem solid black;
 		margin:0 auto;
 		letter-spacing:0.3rem;
+		font-family: 'Dongle', sans-serif;
 		width: 10vw;
-
+		text-align: center;
 	}
 	.products span{
 		display: flex;
@@ -190,12 +178,23 @@ a{
 		width: auto;
 		margin-top: -1.5rem;
 	}
-	.products .setA span > p{
+	.products span  p{
 		font-size:1rem;
 		font-weight:300;
 		margin:0.1rem 0;
 		color: #19211e;
 	}
+	.setA , .setB{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		overflow: hidden;
+		width: 80vw;
+		text-align: center;
+		margin: 0 auto 5vh auto;
+	}
+	
 	.products .pct .slider{
 		display:flex;
 		justify-content:flex-start;
@@ -215,8 +214,20 @@ a{
 		.slider img {
 			height:25vh;
 			width:35vw;
-			margin:0 1.5rem;
+			margin:0 0 0 0;
 		}
+	.setB .pct{
+        margin:2rem auto;
+		width: 40vw;
+		text-align: center;
+    }
+	.setB .pct .slider{
+		display: block;
+		justify-content:center;
+		text-align: center;
+		width: 35vw;
+	}
+
 .container a:last-of-type{
 	font-size:1.5rem;
 	
@@ -402,4 +413,23 @@ a{
 	.footer p{
 		font-size: 2rem;
 		line-height:1.4;
+	}
+.footer {
+	display:block;
+	box-sizing:border-box;
+	left:0;
+	bottom:0;
+	background:black;
+	color:silver;
+	padding:1rem;
+	text-align:center;
+	font-size:1.5rem;
+}
+	.footer > p:first-of-type  {
+		font-size:0.5rem;
+		margin:0.7rem;
+	}
+	.footer > p:last-of-type {
+		font-size:0.6rem;
+		color:grey;
 	}

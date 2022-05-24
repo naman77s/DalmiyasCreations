@@ -46,11 +46,11 @@
 </head>
 <header>
 		<div class="MenuBar">
-			<h2 align="left" >Since 2000</h2>
+			<a href="#"><h2 align="left" >Since 2000</h2></a>
 			<input value="&#9776;" type="text" class="menuIcon" id="menuIcon" onclick="pull()" onblur="dump()" readonly />
 				<div class="Snav" id="Snav">
-					<a href="#Home" class="nav"> <i class="fa fa-home"> Home</i> </a>
-					<a href="#Products" class="nav"> <i class="fa fa-list"> Products</i> </a><hr>
+					<a href="#Home" class="nav"> <i class="fa fa-home"></i>  Home</a>
+					<a href="#Products" class="nav"> <i class="fa fa-list"></i>  Products</a><hr>
 					<a href="#footer" class="nav" id="contact"> Contact Us</a>
 					<div class="container-contact" id="container-contact">
 						<a class="navC" target="_blank" rel="noopener noreferrer" href="https://wa.me/918950661477"><i class="fa fa-whatsapp"> </i></a>
@@ -74,24 +74,57 @@
 
 	</div>
 	<div class="container products" id="products">
+		<h1 class="h1"> Folders </h1>
 		<div class="setA">
-			<h3> Folders </h3>
-			<div class="pct" id="p-a" onclick="openA()" data-aos="fade-up" data-aos-duration="500">
-				<div class="slider">
-					<img class="p-i" alt="Folders">
-					<img class="p-i" alt="Folders">
+			<div  onclick="openA()" data-aos="fade-up" data-aos-duration="500">
+				<div class="pct" id="p-a">
+					<div class="slider">
+						<img class="p-i" alt="Folders">
+						<img class="p-i" alt="Folders">
+					</div>
 				</div>
+				<span><p id="name"> </p> <p id="price"> </p></span>
 			</div>
-			<span><p id="name"> </p><p id="price"> </p></span>
 
-			<div class="pct" id="p-b" onclick="openB()" data-aos="fade-up" data-aos-duration="500">
-				<div class="slider">
-					<img class="p-i" alt="Folders">
-					<img class="p-i" alt="Folders">
+			<div onclick="openB()" data-aos="fade-up" data-aos-duration="500">
+				<div class="pct" id="p-b">
+					<div class="slider">
+						<img class="p-i" alt="Folders">
+						<img class="p-i" alt="Folders">
+					</div>
 				</div>
+				<span><p id="name"> </p> <p id="price"> </p></span>
 			</div>
-			<span><p id="name"></p><p id="price"></p></span>
+		</div>
 
+		<h1 class="h1"> Stamps </h1>
+		<div class="setB">
+			<div onclick="openC()" data-aos="fade-up" data-aos-duration="500">
+				<div class="pct" id="p-c">
+					<div class="slider">
+						<img class="p-i" alt="Folders">
+					</div>
+				</div>
+				<span><p id="name"> </p> <p id="price"> </p></span>
+			</div>
+
+			<div onclick="openD()" data-aos="fade-up" data-aos-duration="500">
+				<div class="pct" id="p-d">
+					<div class="slider">
+						<img class="p-i" alt="Folders">
+					</div>
+				</div>
+				<span><p id="name"> </p> <p id="price"> </p></span>
+			</div>
+
+			<div onclick="openE()" data-aos="fade-up" data-aos-duration="500">
+				<div class="pct" id="p-e">
+					<div class="slider">
+						<img class="p-i" alt="Folders">
+					</div>
+				</div>
+				<span><p id="name"> </p> <p id="price"> </p></span>
+			</div>
 		</div>
 	</div>
 </div>
@@ -142,5 +175,8 @@
 		alert("In order for the WebPage to work properly, Please enable 'JAVASCRIPTS' in your browser. Thanks for visiting :) .");
 	</script>
 </noscript>
+<div>
+	<area>
+</div>
 </body>
 </html>

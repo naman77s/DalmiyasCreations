@@ -10,6 +10,7 @@
         align-content: right;
         position: absolute;
         background: none;
+        color: white;
         height: 6vh;
         width: 25vw;
         top: 0;
@@ -24,10 +25,11 @@
         text-decoration:none;
         font-family:righteous;
         padding:0.7rem;
-        color: black;
+        color: white;
     }
     .Snav .nav:hover{
-        color: white;
+        color: black;
+        background: white;
         border-radius: 1.5rem;
     }
     .Snav hr{
@@ -56,22 +58,27 @@
                 from{right:25%;}
                 to{right:26.5%;}
             }
-    .a-a h3{
-        margin-right: 35vw;
+    .a-a h1{
+	font-family: 'Dancing Script', cursive;
+	font-weight: 700;
+	font-size:5rem;
+	letter-spacing: 0.5rem;
     }
     .a-a h4{
         font-size:1.3rem;
         margin: 0.3rem auto;
     }
+    .a-a h5{
+        font-size:1.1rem;
+    }
     .a-a .Logo{
 		height:9.5rem;
 		width:11.5rem;
-}
+    }
     .slider::-webkit-scrollbar{
         background: none;
     }
-    .products .setA{
-        width: 50vw;
+    .products .setA , .setB{
         margin: 2rem auto;
     }
     .section-main {
@@ -86,11 +93,36 @@
         text-transform: uppercase;
         font-weight: bold;
     }
-    .container-set #input-name:hover{
-        width:27vw;
-    }
+        .container-set #input-name:hover{
+            width:27vw;
+        }
     .container-set #input-submit {
         width: 20vw;
     }
+    .products .pct .slider{
+		justify-content:space-around;
+	}
+            .slider img {
+                width:15vw;
+                margin:0;
+            }
+        .products .setB .pct{
+            width: 20vw;
+        }
+        .products .setB .pct .slider{
+            width: 15vw;
+            justify-content: center;
+        }
+        .container-pro .slider img{
+		width:30vw;
+	}
+        .footer > p:first-of-type  {
+            font-size:0.8rem;
+            color: white;
+        }
+        .footer > p:last-of-type {
+            font-size:0.9rem;
+            color:silver;
+        }
 
 }
