@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cinzel:wght@400;500;700;900&family=Comfortaa:wght@300;400;500;600;700&family=Dangrek&family=Dongle:wght@300;400;700&family=Indie+Flower&family=Josefin+Sans&family=Koulen&family=Macondo&family=Odibee+Sans&family=Raleway:ital,wght@0,200;0,400;0,600;0,800;1,400;1,800&family=Secular+One&family=Shadows+Into+Light&family=Skranji&family=Staatliches&family=Zen+Loop&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@500;600;700&family=Cinzel:wght@400;500;700;900&family=Comfortaa:wght@300;400;500;600;700&family=Dangrek&family=Dongle:wght@300;400;700&family=Indie+Flower&family=Josefin+Sans&family=Koulen&family=Macondo&family=Odibee+Sans&family=Raleway:ital,wght@0,200;0,400;0,600;0,800;1,400;1,800&family=Secular+One&family=Shadows+Into+Light&family=Skranji&family=Staatliches&family=Zen+Loop&display=swap');
+
 *{
     scroll-behavior: smooth;
     --webkit-user-select:none;
@@ -32,7 +32,7 @@ p , h1 , h2 , h3 , h4 , h5{
 		font-family: 'Secular One', sans-serif;
 		color: white;
 		margin: 0.4rem;
-		width: 25vw;
+		width: 35vw;
 		z-index:2;
 		cursor: crosshair;
 	}
@@ -132,26 +132,28 @@ a{
 	text-align:center;
 	z-index: 3;
 }
+.a-a .Logo{
+	height:8.5rem;
+	width:9.5rem;
+	border-radius: 1.5rem;
+	cursor: crosshair;
+}
 .a-a h1{
 	font-family: 'Dancing Script', cursive;
 	font-weight: 700;
-	font-size:2rem;
+	font-size:1.6rem;
 	letter-spacing: 0.5rem;
 	margin-bottom: 1vh;
 }
-.a-a .Logo{
-		height:8.5rem;
-		width:9.5rem;
-		border-radius: 1.5rem;
-		cursor: crosshair;
-}
 .a-a h4{
 	font-family: 'Comfortaa', cursive;
-	font-size:0.8rem;
+	font-size:0.7rem;
+	font-weight: 700;
 }
 .a-a h5{
 	font-family: 'Comfortaa', cursive;
 	font-size:0.7rem;
+	font-weight: 500;
 }
 .products .pct{
 	display:block;
@@ -169,7 +171,7 @@ a{
 		margin:0 auto;
 		letter-spacing:0.3rem;
 		font-family: 'Dongle', sans-serif;
-		width: 10vw;
+		width: 15vw;
 		text-align: center;
 	}
 	.products span{
@@ -179,8 +181,9 @@ a{
 		margin-top: -1.5rem;
 	}
 	.products span  p{
+		font-family: 'Raleway', sans-serif;
 		font-size:1rem;
-		font-weight:300;
+		font-weight:500;
 		margin:0.1rem 0;
 		color: #19211e;
 	}
@@ -213,19 +216,19 @@ a{
 		}
 		.slider img {
 			height:25vh;
-			width:35vw;
+			width:40vw;
 			margin:0 0 0 0;
 		}
 	.setB .pct{
         margin:2rem auto;
-		width: 40vw;
+		width: 50vw;
 		text-align: center;
     }
 	.setB .pct .slider{
 		display: block;
 		justify-content:center;
 		text-align: center;
-		width: 35vw;
+		width: 40vw;
 	}
 
 .container a:last-of-type{
@@ -283,7 +286,7 @@ a{
 	}
 	.container-pro .slider img{
 		height:50vh;
-		width:70vw;
+		width:80vw;
 		margin:0 1.5rem;
 	}
 .container-details{
@@ -291,7 +294,8 @@ a{
 		justify-content:center;
 		padding:0.5rem;
 		flex-wrap:wrap;
-		font-size:1.5rem;
+		font-family: 'Raleway', sans-serif;
+		font-size:1.3rem;
 		font-weight: 500;
 		font-weight:500;
 	}

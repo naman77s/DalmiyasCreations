@@ -60,7 +60,7 @@ $(document).ready(function(){
 		const name = set.querySelectorAll("#name");
 		const price = set.querySelectorAll("#price");
 		name[0].innerHTML = "Type : " + productA.name ;
-		price[0].innerHTML = "Price :" + productA.price;
+		price[0].innerHTML = "&nbsp;&nbsp; Price :" + productA.price;
 		for (var i = 0, len = img.length; i < len; i++) {
 			img[i].setAttribute("src" , productA.image[i]);
 		}
@@ -73,7 +73,7 @@ $("#p-a").ready(function(){
 		const name = set.querySelectorAll("#name");
 		const price = set.querySelectorAll("#price");
 		name[1].innerHTML = "Type : " + productB.name ;
-		price[1].innerHTML = "Price :" + productB.price;
+		price[1].innerHTML = "&nbsp;&nbsp; Price :" + productB.price;
 		for (var i = 0, len = img.length; i < len; i++) {
 			img[i].setAttribute("src" , productB.image[i]);
 		}
@@ -86,7 +86,7 @@ $("#p-b").ready(function(){
 		const name = set.querySelectorAll("#name");
 		const price = set.querySelectorAll("#price");
 		name[0].innerHTML = "Type : " + productC.name ;
-		price[0].innerHTML = "Price :" + productC.price;
+		price[0].innerHTML = "&nbsp; Price :" + productC.price;
 		for (var i = 0, len = img.length; i < len; i++) {
 			img[i].setAttribute("src" , productC.image[i]);
 		}
@@ -99,7 +99,7 @@ $("#p-c").ready(function(){
 		const name = set.querySelectorAll("#name");
 		const price = set.querySelectorAll("#price");
 		name[1].innerHTML = "Type : " + productD.name ;
-		price[1].innerHTML = "Price :" + productD.price;
+		price[1].innerHTML = "&nbsp; Price :" + productD.price;
 		for (var i = 0, len = img.length; i < len; i++) {
 			img[i].setAttribute("src" , productD.image[i]);
 		}
@@ -112,7 +112,7 @@ $("#p-d").ready(function(){
 		const name = set.querySelectorAll("#name");
 		const price = set.querySelectorAll("#price");
 		name[2].innerHTML = "Type : " + productE.name ;
-		price[2].innerHTML = "Price :" + productE.price;
+		price[2].innerHTML = "&nbsp; Price :" + productE.price;
 		for (var i = 0, len = img.length; i < len; i++) {
 			img[i].setAttribute("src" , productE.image[i]);
 		}
